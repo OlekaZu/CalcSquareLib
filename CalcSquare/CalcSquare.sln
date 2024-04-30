@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcSquare.Lib", "CalcSquare.Lib\CalcSquare.Lib.csproj", "{6951B5DA-AD4E-4D25-9463-EB08D6EDE743}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcSquare.Tests", "CalcSquare.Tests\CalcSquare.Tests.csproj", "{6E9FBC7B-D1D0-4F1D-963C-FBC8BB879994}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6951B5DA-AD4E-4D25-9463-EB08D6EDE743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6951B5DA-AD4E-4D25-9463-EB08D6EDE743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6951B5DA-AD4E-4D25-9463-EB08D6EDE743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6951B5DA-AD4E-4D25-9463-EB08D6EDE743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E9FBC7B-D1D0-4F1D-963C-FBC8BB879994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E9FBC7B-D1D0-4F1D-963C-FBC8BB879994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E9FBC7B-D1D0-4F1D-963C-FBC8BB879994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E9FBC7B-D1D0-4F1D-963C-FBC8BB879994}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
