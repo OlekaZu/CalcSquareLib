@@ -9,12 +9,19 @@ public static class Figure
     {
         var defaultCulture = Thread.CurrentThread.CurrentCulture;
         Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+
         var data = input.Split();
+        if (data.Length <= 1)
+            throw new ArgumentException("Not enough data for creating geometric figure");
+        double[] dto = data.Skip(1).Select(x =>
+            double.TryParse(x, out double d) ? d
+            : throw new ArgumentException($"Invalid data (not double): {x}")).ToArray();
+
         string firstWord = data[0];
         IGeometricFigure figure = firstWord switch
         {
-            "circle" => new Circle(double.Parse(data[1])),
-            "triangle" => new Triangle(double.Parse(data[1]), double.Parse(data[2]), double.Parse(data[3])),
+            "circle" => new Circle(dto),
+            "triangle" => new Triangle(dto),
             _ => throw new ArgumentException($"Unknown figure: {firstWord}")
         };
         Thread.CurrentThread.CurrentCulture = defaultCulture;
